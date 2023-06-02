@@ -2,70 +2,42 @@ import React from "react";
 import "../../pages/style.css";
 import ProjectCard from "./ProjectCard";
 import { Container, Row, Col } from "react-bootstrap";
-
+import frmx from "../../Assets/Screenshot 2023-06-01 223642.jpg";
+import iris from "../../Assets/51518iris img1.png";
+import rawg from "../../Assets/WlsWAqEbIshvbP1o9rG93wYZO_FrgLrV76WM_BINEjk.webp";
 function Projectlist() {
   return (
     <div className="projectbackground">
       <Container fluid className="project-section">
         <Container>
           <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-            <Col md={4} className="project-card">
+            <Col md={12} className="project-card">
               <ProjectCard
-                //     imgPath={}
+                imgPath={frmx}
                 isBlog={false}
-                title=""
+                title="FarmX"
                 description=""
-                ghLink=""
+                ghLink="https://github.com/shubhamchaudhary1/FarmX"
               />
             </Col>
 
-            <Col md={4} className="project-card">
+            <Col md={12} className="project-card">
               <ProjectCard
-                //  imgPath={}
+                imgPath={iris}
                 isBlog={false}
-                title=""
+                title="IRIS Flowers Classification Using Machine Learning"
                 description=""
-                ghLink=""
+                ghLink="https://github.com/shubhamchaudhary1/Iris-Flower-Classification-Using-Machine-Learning"
               />
             </Col>
 
-            <Col md={4} className="project-card">
+            <Col md={12} className="project-card">
               <ProjectCard
-                //      imgPath={}
+                imgPath={rawg}
                 isBlog={false}
-                title=""
+                title="Game-Hub"
                 description=""
-                ghLink=""
-              />
-            </Col>
-
-            <Col md={4} className="project-card">
-              <ProjectCard
-                //        imgPath={}
-                isBlog={false}
-                title=""
-                description=""
-                ghLink=""
-              />
-            </Col>
-
-            <Col md={4} className="project-card">
-              <ProjectCard
-                //     imgPath={}
-                isBlog={false}
-                title=""
-                description=""
-                ghLink=""
-              />
-            </Col>
-
-            <Col md={4} className="project-card">
-              <ProjectCard
-                //       imgPath={}
-                isBlog={false}
-                title=""
-                description=" "
-                ghLink=""
+                ghLink="https://github.com/shubhamchaudhary1/game-hub"
               />
             </Col>
           </Row>
